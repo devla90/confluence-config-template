@@ -19,11 +19,14 @@ This config repo must be a sibling of the framework repo:
 
 When asked to generate Confluence documentation:
 
-1. Read project config: `./project-config.md` — get prefix (ACME), space key (ACMEWEB), frentes, tech labels, documentation language (english)
+1. Read project config: `./project-config.md` — get prefix (ACME), space key (ACMEWEB), frentes, `Paths`, `Code Repositories`, tech labels, documentation language (english)
 2. Read standards: `../confluence-framework/docs/documentation-guide.md` — naming, labels, lifecycle, Page Properties
 3. Read the corresponding template: `../confluence-framework/templates/{type}.md`
-4. Generate the document in `output/` following the template structure
-5. Write content in the language specified in project-config.md (spanish)
+4. Resolve the source to document: the path **or URL** given in the request, otherwise the `Code Repositories` row matching the chosen frente. Analyze that codebase with Glob/Grep/Read, or fetch the link with WebFetch. Skip if nothing is available and use placeholders instead
+5. Generate the document in `{Output path}/{source}/` (default base `./output/`), where `{source}` is the basename of the source repo, or `generic` when the source was a link or user input only. Create the folder with `mkdir -p` — never write straight into `output/`
+6. Write content in the language specified in project-config.md
+
+Never copy secret values out of the target repo — record variable names only and reference AWS Secrets Manager.
 
 ## Available document types
 
@@ -43,19 +46,50 @@ When asked to generate Confluence documentation:
 
 ## Connecting code repos
 
-To enable documentation generation from a code repository, copy the CLAUDE.md template:
+Two modes, pick per repo.
+
+### Mode A — CLAUDE.md inside the code repo
 
 ```bash
 cp ../confluence-framework/examples/repo-claude-md-example.md /path/to/your/repo/CLAUDE.md
 ```
 
 Fill in the variables with this project's values:
+- `{DESCRIPTION}` → short repo description
 - `{FRONT}` → the frente (e.g., `frontend`)
 - `{PREFIX}` → `ACME-FRONT` (or the corresponding suffix)
 - `{FRAMEWORK_PATH}` → relative path to `../confluence-framework/`
-- `{CONFIG_PATH}` → relative path to `../confluence-config-acme-web/`
+- `{CONFIG_PATH}` → relative path to `../confluence-config-acme-web/project-config.md`
 - `{SPACE_KEY}` → `ACMEWEB`
-- `{DESCRIPTION}` → short repo description
+
+### Mode B — aim at an external path from this repo
+
+Nothing is written into the code repo.
+
+1. Fill the `Code Repositories` table in `./project-config.md` with each repo's local path
+2. Install the skill globally so it works from here:
+   ```bash
+   cp -r ../confluence-framework/.claude/skills/doc-confluence ~/.claude/skills/
+   cp -r ../confluence-framework/.claude/agents/confluence-doc ~/.claude/agents/
+   ```
+3. Grant read access to the target: `/add-dir /path/to/your/repo`
+4. Run from this repo: `/doc-confluence api-spec Authentication Service`
+
+Pass a path as the third argument to override the table for one run:
+`/doc-confluence api-spec Payments /path/to/payments-api`
+
+A URL works too — the result is filed under `output/generic/`:
+`/doc-confluence api-spec Stripe https://docs.stripe.com/api`
+
+## Output layout
+
+```
+output/
++-- {source-repo-name}/          <- one folder per repo documented
+|   +-- {type}_{subject}_{YYYY-MM-DD}.md
++-- generic/                     <- sources that are links, or user input only
+    +-- {type}_{subject}_{YYYY-MM-DD}.md
+```
 
 ## Key rules
 
