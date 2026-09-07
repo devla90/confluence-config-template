@@ -42,12 +42,27 @@ Project-specific configuration for generating Confluence documentation using the
    ../confluence-config-acme-web/  ← this repo
    ```
 
-2. Use the AI agent (Claude Code) from this directory:
+2. Register the repos you want documented in the `Code Repositories` table of
+   `project-config.md`, then use the AI agent (Claude Code) from this directory:
    ```
    Generate a [document type] for [subject]
    ```
+   or run the skill directly, optionally pointing at a path or a link:
+   ```
+   /doc-confluence api-spec Payments Service /path/to/payments-api
+   /doc-confluence api-spec Stripe https://docs.stripe.com/api
+   ```
 
-3. The generated document will be placed in `output/` following the framework templates and project conventions.
+3. The generated document is placed under `output/{source}/`, following the framework
+   templates and project conventions:
+
+   ```
+   output/
+   +-- {source-repo-name}/   <- one folder per repo documented
+   |   +-- {type}_{subject}_{YYYY-MM-DD}.md
+   +-- generic/              <- sources that are links, or user input only
+       +-- {type}_{subject}_{YYYY-MM-DD}.md
+   ```
 
 ## Available Document Types
 
