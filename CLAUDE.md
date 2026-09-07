@@ -72,6 +72,8 @@ Nothing is written into the code repo.
    cp -r ../confluence-framework/.claude/skills/doc-confluence ~/.claude/skills/
    cp -r ../confluence-framework/.claude/agents/confluence-doc ~/.claude/agents/
    ```
+
+   On Windows these run in Git Bash. For PowerShell equivalents and path-format rules see `docs/customization-guide.md` -> Windows notes.
 3. Grant read access to the target: `/add-dir /path/to/your/repo`
 4. Run from this repo: `/doc-confluence api-spec Authentication Service`
 
