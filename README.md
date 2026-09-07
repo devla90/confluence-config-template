@@ -36,6 +36,11 @@ Project-specific configuration for generating Confluence documentation using the
 
 ## How to Generate Documentation
 
+0. Install the adapter for your AI assistant once -- see
+   `../confluence-framework/adapters/README.md`. Claude Code, OpenAI Codex, GitHub
+   Copilot, opencode, Devin and Cursor are all supported;
+   `../confluence-framework/docs/compatibility.md` says what each can do.
+
 1. Ensure the framework repo is a sibling directory:
    ```
    ../confluence-framework/   ← framework (shared)
