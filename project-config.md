@@ -14,6 +14,7 @@
 | Organization | {Your Organization} |
 | Naming prefix | {PREFIX} |
 | Confluence space key | {SPACEKEY} |
+| Space shared with other projects | {yes / no} |
 | Confluence URL | {https://your-org.atlassian.net/wiki} |
 | Documentation language | {english / spanish / portuguese} |
 | Team size | {e.g. 5-15} |
