@@ -1,96 +1,69 @@
-# Confluence Config — Acme Corp Web Portal
+# Confluence Config — {Your Project Name}
 
-Project-specific configuration for generating Confluence documentation using the [Confluence Framework](../confluence-framework/).
+Project-specific configuration for documenting **{Your Project Name}** in Confluence
+Cloud, following the standards in
+[confluence-framework](https://github.com/devla90/confluence-framework).
 
-## Overview
+> **This is a template repository.** Press **Use this template** to create your own
+> config repo, then work through the checklist below. The repo you get is yours — no
+> ongoing link back here, no shared history.
 
-| Field | Value |
-|-------|-------|
-| Space Key | `ACMEWEB` |
-| Prefix | `ACME` |
-| Language | English |
-| License | Apache 2.0 |
+---
 
-## Repository Structure
+## Setup checklist
+
+- [ ] **1. Create your repo** — press *Use this template* above, name it
+      `confluence-config-{your-project}`
+- [ ] **2. Clone it next to the framework:**
+      ```bash
+      git clone https://github.com/devla90/confluence-framework
+      git clone <your-new-repo>
+      ```
+      To pin a framework release: `git clone --branch v1.0.0 <framework-url>`
+- [ ] **3. Fill in `project-config.md`** — every `{placeholder}`. Start with Identity and
+      Frentes; the rest can follow
+- [ ] **4. Adapt `page-structure.md`** to the frentes you actually kept
+- [ ] **5. Install your assistant's adapter** — one command, see
+      [`adapters/README.md`](https://github.com/devla90/confluence-framework/blob/main/adapters/README.md)
+- [ ] **6. Smoke test** — from this repo, generate something small and check it lands in
+      `output/`
+- [ ] **7. Delete this checklist** and describe your project instead
+
+A filled example to compare against at any point:
+[`examples/config-repo/`](https://github.com/devla90/confluence-framework/tree/main/examples/config-repo).
+
+---
+
+## What lives here
+
+| File | Holds |
+|------|-------|
+| `project-config.md` | Identity, paths, frentes, code repositories, tech labels, secrets platform |
+| `page-structure.md` | The Confluence page tree for this project |
+| `AGENTS.md` | Entry point every AI assistant reads |
+| `CLAUDE.md` | Claude Code's entry point; imports `AGENTS.md` |
+| `output/` | Generated documents, one subfolder per source |
+
+Standards, templates and the generation procedure are **not** duplicated here — they
+stay in the framework repo, so an update there reaches every project.
+
+## Generating a document
 
 ```
-├── project-config.md    # Project identity, frentes, tech labels, tools
-├── page-structure.md    # Full Confluence page tree and section definitions
-├── output/              # Generated documentation (not committed)
-├── CLAUDE.md            # AI agent instructions for document generation
-└── LICENSE
+/doc-confluence <type> <subject> [source-path-or-url]
 ```
 
-## Sections (Frentes)
+Types: `func-spec` · `adr` · `api-spec` · `env-config` · `runbook` · `security-doc` ·
+`migration` · `test-plan` · `test-strategy` · `infra-request` · `role-request`
 
-| Section | Prefix | Owner |
-|---------|--------|-------|
-| Frontend | `ACME-FRONT` | Tech Lead Frontend |
-| Backend & Services | `ACME-BACK` | Tech Lead Backend |
-| UI/UX Design | `ACME-DESIGN` | Design Lead |
-| Business & Product | `ACME-BIZ` | Product Owner |
-| Architecture & Cloud | `ACME-ARCH` | Solution Architect |
-| Security & Compliance | `ACME-SEC` | Security Lead |
-| QA & Testing | `ACME-QA` | QA Lead |
-| Governance Hub | `ACME-HUB` | Documentation Champion |
+Results are filed under `output/{source}/` — one folder per repo documented, `generic/`
+for links. Full walkthrough:
+[`docs/how-it-works.md`](https://github.com/devla90/confluence-framework/blob/main/docs/how-it-works.md).
 
-## How to Generate Documentation
+## Rules that apply to everything generated here
 
-0. Install the adapter for your AI assistant once -- see
-   `../confluence-framework/adapters/README.md`. Claude Code, OpenAI Codex, GitHub
-   Copilot, opencode, Devin and Cursor are all supported;
-   `../confluence-framework/docs/compatibility.md` says what each can do.
-
-1. Ensure the framework repo is a sibling directory:
-   ```
-   ../confluence-framework/   ← framework (shared)
-   ../confluence-config-acme-web/  ← this repo
-   ```
-
-2. Register the repos you want documented in the `Code Repositories` table of
-   `project-config.md`, then use the AI agent (Claude Code) from this directory:
-   ```
-   Generate a [document type] for [subject]
-   ```
-   or run the skill directly, optionally pointing at a path or a link:
-   ```
-   /doc-confluence api-spec Payments Service /path/to/payments-api
-   /doc-confluence api-spec Stripe https://docs.stripe.com/api
-   ```
-
-3. The generated document is placed under `output/{source}/`, following the framework
-   templates and project conventions:
-
-   ```
-   output/
-   +-- {source-repo-name}/   <- one folder per repo documented
-   |   +-- {type}_{subject}_{YYYY-MM-DD}.md
-   +-- generic/              <- sources that are links, or user input only
-       +-- {type}_{subject}_{YYYY-MM-DD}.md
-   ```
-
-## Available Document Types
-
-| Type | Template Key |
-|------|-------------|
-| Functional Specification | `func-spec` |
-| Architecture Decision Record | `adr` |
-| API Specification | `api-spec` |
-| Environment Configuration | `env-config` |
-| Operational Runbook | `runbook` |
-| Security/Compliance Document | `security-doc` |
-| Migration (AS-IS to TO-BE) | `migration` |
-| Test Plan | `test-plan` |
-| Testing Strategy | `test-strategy` |
-| Infrastructure Request | `infra-request` |
-| Deployment Role Request | `role-request` |
-
-## Connecting Code Repositories
-
-To enable documentation generation from a code repo, copy the CLAUDE.md template:
-
-```bash
-cp ../confluence-framework/examples/repo-claude-md-example.md /path/to/your/repo/CLAUDE.md
-```
-
-See `CLAUDE.md` in this repo for the full variable reference.
+- **Secrets never appear in Confluence.** Variable names only, plus a pointer to the
+  secrets platform named in `project-config.md`
+- **Nothing is invented.** What cannot be extracted from the source or supplied by you
+  stays a `{placeholder}`
+- **Relative repo paths.** This file is shared; absolute paths break for teammates

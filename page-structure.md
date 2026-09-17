@@ -1,7 +1,7 @@
-# Page Structure — Acme Corp Web Portal
+# Page Structure — {Your Project Name}
 
-Space: `ACMEWEB`
-Prefix: `ACME`
+Space: `{SPACEKEY}`
+Prefix: `{PREFIX}`
 
 ---
 
@@ -9,14 +9,14 @@ Prefix: `ACME`
 
 | Section | Naming Prefix | Description | Section Owner |
 |---------|--------------|-------------|---------------|
-| Governance Hub | `ACME-HUB` | Standards, cross-cutting docs, governance, AI initiative | Documentation Champion |
-| Frontend | `ACME-FRONT` | React, WordPress CMS, components, frontend configs | Tech Lead Frontend |
-| Backend & Services | `ACME-BACK` | Microservices, Lambdas, APIs, forms | Tech Lead Backend |
-| UI/UX Design | `ACME-DESIGN` | Design system, guidelines, Figma, research | Design Lead |
-| Business & Product | `ACME-BIZ` | Product vision, business rules, features, processes | Product Owner |
-| Architecture & Cloud | `ACME-ARCH` | AWS, infrastructure, ADRs, deployments, CI/CD | Solution Architect |
-| Security & Compliance | `ACME-SEC` | Security SDLC, compliance, access, audits | Security Lead |
-| QA & Testing | `ACME-QA` | Testing strategy, test plans, automation, quality metrics | QA Lead |
+| Governance Hub | `{PREFIX}-HUB` | Standards, cross-cutting docs, governance, AI initiative | Documentation Champion |
+| Frontend | `{PREFIX}-FRONT` | {frontend technologies}, components, frontend configs | Tech Lead Frontend |
+| Backend & Services | `{PREFIX}-BACK` | {backend technologies} | Tech Lead Backend |
+| UI/UX Design | `{PREFIX}-DESIGN` | Design system, guidelines, Figma, research | Design Lead |
+| Business & Product | `{PREFIX}-BIZ` | Product vision, business rules, features, processes | Product Owner |
+| Architecture & Cloud | `{PREFIX}-ARCH` | {cloud and infrastructure} | Solution Architect |
+| Security & Compliance | `{PREFIX}-SEC` | Security SDLC, compliance, access, audits | Security Lead |
+| QA & Testing | `{PREFIX}-QA` | Testing strategy, test plans, automation, quality metrics | QA Lead |
 
 > **Security**: The "Security & Compliance" root page must have **Page Restrictions** applied. Confluence Cloud inherits restrictions to child pages. Restrict to: security team + architects + tech leads.
 
@@ -25,7 +25,7 @@ Prefix: `ACME`
 ## Full Page Tree
 
 ```
-Home (ACMEWEB — Welcome page with links to all sections)
+Home ({SPACEKEY} — Welcome page with links to all sections)
 │
 ├── Governance Hub
 │   ├── Project Overview
@@ -303,7 +303,7 @@ Home (ACMEWEB — Welcome page with links to all sections)
 
 1. **Home page**: Create with links to all 8 main sections (use Table of Children macro)
 2. **Root sections**: Create the 8 first-level pages as parent pages for each frente
-3. **Templates**: Configure all 11 templates as Space Templates in ACMEWEB
+3. **Templates**: Configure all 11 templates as Space Templates in {SPACEKEY}
 4. **Initial labels**: Add `team:{team}` to each section's root page
 5. **Page Restrictions**: Apply read restriction on the "Security & Compliance" root page — Confluence inherits the restriction to all child pages
 6. **Sidebar**: Organize shortcuts to the 8 main sections
@@ -314,9 +314,9 @@ Home (ACMEWEB — Welcome page with links to all sections)
 
 If the project grows and frentes need to be separated into their own spaces:
 
-1. Create the new space in Confluence (e.g., `ACME-FRONT`)
+1. Create the new space in Confluence (e.g., `{PREFIX}-FRONT`)
 2. Move the pages from the "Frontend" section to the new space (native Confluence: select page > Move)
-3. Titles already have the correct prefix (`[ACME-FRONT] Func Spec — ...`) — no renaming needed
+3. Titles already have the correct prefix (`[{PREFIX}-FRONT] Func Spec — ...`) — no renaming needed
 4. Labels already identify the team (`team:frontend`) — no re-labeling needed
 5. Replicate templates as Space Templates in the new space
 6. Update permissions: configure Space Permissions instead of Page Restrictions
