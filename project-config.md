@@ -1,6 +1,8 @@
-# Project Configuration — Acme Corp Web Portal
+# Project Configuration — {Your Project Name}
 
-> Example configuration. Copy `project-config-template.md` and adapt to your project.
+> Fill in every `{placeholder}` below. This file is what makes the framework
+> project-specific; the framework itself never holds these values.
+> A filled example: `confluence-framework/examples/config-repo/project-config.md`.
 
 ---
 
@@ -8,13 +10,13 @@
 
 | Field | Value |
 |-------|-------|
-| Project name | Acme Corp Web Portal |
-| Organization | Acme Corp |
-| Naming prefix | ACME |
-| Confluence space key | ACMEWEB |
-| Confluence URL | https://acme-corp.atlassian.net/wiki |
-| Documentation language | english |
-| Team size | 5-15 |
+| Project name | {Your Project Name} |
+| Organization | {Your Organization} |
+| Naming prefix | {PREFIX} |
+| Confluence space key | {SPACEKEY} |
+| Confluence URL | {https://your-org.atlassian.net/wiki} |
+| Documentation language | {english / spanish / portuguese} |
+| Team size | {e.g. 5-15} |
 
 ## Paths
 
@@ -25,15 +27,18 @@
 
 ## Frentes (Sections)
 
+These seven are a common starting point. Delete the ones you do not have and rename the
+rest — the suffix is what appears in every page title as `[{PREFIX}-{SUFFIX}]`.
+
 | Front | Suffix | Technologies | Section Owner | Team Label |
 |-------|--------|-------------|---------------|------------|
-| Frontend | FRONT | React, WordPress CMS | Tech Lead Frontend | team:frontend |
-| Backend | BACK | Microservices, AWS Lambda, API Gateway | Tech Lead Backend | team:backend |
-| UI/UX | DESIGN | Figma, Design System | Design Lead | team:design |
-| Business | BIZ | Jira, Business Rules | Product Owner | team:business |
-| Architecture | ARCH | AWS (CloudFront, S3, Lambda, RDS, IAM) | Solution Architect | team:architecture |
-| Security | SEC | SDLC, Compliance, RBAC | Security Lead | team:security |
-| QA & Testing | QA | Jira native, Excel (future: Xray/Zephyr) | QA Lead | team:qa |
+| Frontend | FRONT | {tech, tech} | {role} | team:frontend |
+| Backend | BACK | {tech, tech} | {role} | team:backend |
+| UI/UX | DESIGN | {tech, tech} | {role} | team:design |
+| Business | BIZ | {tech, tech} | {role} | team:business |
+| Architecture | ARCH | {tech, tech} | {role} | team:architecture |
+| Security | SEC | {tech, tech} | {role} | team:security |
+| QA & Testing | QA | {tech, tech} | {role} | team:qa |
 
 ## Code Repositories
 
@@ -59,35 +64,31 @@ paths are specific to one machine.
 
 ## Technology Labels
 
+One row per technology your team will want to filter pages by in Confluence.
+
 | Label | Description |
 |-------|-------------|
-| tech:react | Frontend framework |
-| tech:wordpress | CMS |
-| tech:aws-lambda | Serverless compute |
-| tech:api-gateway | API management |
-| tech:s3 | Object storage |
-| tech:cloudfront | CDN |
-| tech:dynamodb | NoSQL database |
-| tech:rds | Relational database |
-| tech:gtm | Google Tag Manager |
-| tech:ga4 | Google Analytics 4 |
+| tech:{name} | {what it is} |
+| tech:{name} | {what it is} |
 
 ## Secrets Platform
 
+Never a credential — only where credentials live, so generated documents can point at
+the right place instead of inlining a value.
+
 | Field | Value |
 |-------|-------|
-| Tool | AWS Secrets Manager |
-| Reference format in docs | See AWS Secrets Manager: {path} |
+| Tool | {AWS Secrets Manager / Azure Key Vault / HashiCorp Vault / GCP Secret Manager} |
+| Reference format in docs | {e.g. "See AWS Secrets Manager: {path}"} |
 
 ## Tools
 
 | Tool | Purpose |
 |------|---------|
-| Jira | Task management and backlog |
-| Figma | UI/UX design |
-| GitHub | Source code |
-| draw.io | Architecture and flow diagrams |
-| Swagger/OpenAPI | API documentation |
+| {Jira / Azure DevOps / Linear} | Task management and backlog |
+| {Figma / Sketch} | UI/UX design |
+| {GitHub / GitLab / Bitbucket} | Source code |
+| {draw.io} | Architecture and flow diagrams |
 
 ## Overrides
 
