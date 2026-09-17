@@ -27,274 +27,274 @@ Prefix: `{PREFIX}`
 ```
 Home ({SPACEKEY} — Welcome page with links to all sections)
 │
-├── Governance Hub
-│   ├── Project Overview
-│   │   ├── Project Charter and Objectives
-│   │   ├── Team Directory and Contacts
-│   │   ├── Onboarding Guide
-│   │   └── Glossary
-│   ├── Documentation Standards
-│   │   ├── How to Write Documentation (Style Guide)
-│   │   ├── Naming Conventions
-│   │   ├── Label Taxonomy
-│   │   ├── Template Catalog
-│   │   ├── Decision Guide — What Goes in Confluence
-│   │   └── Document Lifecycle Policy
-│   ├── Cross-Cutting Documentation
-│   │   ├── Global Configurations
-│   │   │   ├── Secrets Management Policy
-│   │   │   ├── Shared Environment Variables
-│   │   │   └── Cross-Component Configuration Map
-│   │   ├── Environment Matrix
-│   │   │   ├── DEV Environment
-│   │   │   ├── QA Environment
-│   │   │   ├── STG Environment
-│   │   │   └── PROD Environment
-│   │   ├── Integration Map
-│   │   │   ├── System-to-System Dependencies
-│   │   │   ├── API Contracts Registry (index)
-│   │   │   └── Data Flow Diagrams
-│   │   └── AS-IS to TO-BE Transition
-│   │       ├── Migration Status Dashboard
-│   │       ├── AS-IS Component Inventory
-│   │       └── TO-BE Component Mapping
-│   ├── Releases and Deployments
-│   │   ├── Release Calendar
-│   │   ├── Release Notes Archive
-│   │   │   └── [YYYY-MM] Release vX.Y.Z
-│   │   └── Deployment Runbooks (index linking to Architecture section)
-│   ├── Governance and Reviews
-│   │   ├── Documentation Review Calendar
-│   │   ├── Quarterly Audit Log
-│   │   └── Change Log (structural changes to the doc system)
-│   └── AI Documentation Initiative
-│       ├── AI Integration Roadmap
-│       ├── Automation Inventory
-│       └── AI-Generated Content Policy
+├── [{PREFIX}-HUB] Governance Hub
+│   ├── [{PREFIX}-HUB] Project Overview
+│   │   ├── [{PREFIX}-HUB] Project Charter and Objectives
+│   │   ├── [{PREFIX}-HUB] Team Directory and Contacts
+│   │   ├── [{PREFIX}-HUB] Onboarding Guide
+│   │   └── [{PREFIX}-HUB] Glossary
+│   ├── [{PREFIX}-HUB] Documentation Standards
+│   │   ├── [{PREFIX}-HUB] How to Write Documentation (Style Guide)
+│   │   ├── [{PREFIX}-HUB] Naming Conventions
+│   │   ├── [{PREFIX}-HUB] Label Taxonomy
+│   │   ├── [{PREFIX}-HUB] Template Catalog
+│   │   ├── [{PREFIX}-HUB] Decision Guide — What Goes in Confluence
+│   │   └── [{PREFIX}-HUB] Document Lifecycle Policy
+│   ├── [{PREFIX}-HUB] Cross-Cutting Documentation
+│   │   ├── [{PREFIX}-HUB] Global Configurations
+│   │   │   ├── [{PREFIX}-HUB] Secrets Management Policy
+│   │   │   ├── [{PREFIX}-HUB] Shared Environment Variables
+│   │   │   └── [{PREFIX}-HUB] Cross-Component Configuration Map
+│   │   ├── [{PREFIX}-HUB] Environment Matrix
+│   │   │   ├── [{PREFIX}-HUB] DEV Environment
+│   │   │   ├── [{PREFIX}-HUB] QA Environment
+│   │   │   ├── [{PREFIX}-HUB] STG Environment
+│   │   │   └── [{PREFIX}-HUB] PROD Environment
+│   │   ├── [{PREFIX}-HUB] Integration Map
+│   │   │   ├── [{PREFIX}-HUB] System-to-System Dependencies
+│   │   │   ├── [{PREFIX}-HUB] API Contracts Registry (index)
+│   │   │   └── [{PREFIX}-HUB] Data Flow Diagrams
+│   │   └── [{PREFIX}-HUB] AS-IS to TO-BE Transition
+│   │       ├── [{PREFIX}-HUB] Migration Status Dashboard
+│   │       ├── [{PREFIX}-HUB] AS-IS Component Inventory
+│   │       └── [{PREFIX}-HUB] TO-BE Component Mapping
+│   ├── [{PREFIX}-HUB] Releases and Deployments
+│   │   ├── [{PREFIX}-HUB] Release Calendar
+│   │   ├── [{PREFIX}-HUB] Release Notes Archive
+│   │   │   └── [{PREFIX}-HUB] Release vX.Y.Z
+│   │   └── [{PREFIX}-HUB] Deployment Runbooks (index linking to Architecture section)
+│   ├── [{PREFIX}-HUB] Governance and Reviews
+│   │   ├── [{PREFIX}-HUB] Documentation Review Calendar
+│   │   ├── [{PREFIX}-HUB] Quarterly Audit Log
+│   │   └── [{PREFIX}-HUB] Change Log (structural changes to the doc system)
+│   └── [{PREFIX}-HUB] AI Documentation Initiative
+│       ├── [{PREFIX}-HUB] AI Integration Roadmap
+│       ├── [{PREFIX}-HUB] Automation Inventory
+│       └── [{PREFIX}-HUB] AI-Generated Content Policy
 │
-├── Frontend
-│   ├── Architecture and Stack
-│   │   ├── React Application Architecture
-│   │   ├── WordPress CMS Architecture
-│   │   ├── Technical Decisions (ADRs)
-│   │   └── Component Library Reference
-│   ├── Environment Configuration
-│   │   ├── Local Development Setup
-│   │   ├── DEV Environment Config
-│   │   ├── QA Environment Config
-│   │   ├── STG Environment Config
-│   │   └── PROD Environment Config
-│   ├── Functional Documentation
-│   │   ├── [Module/Feature Name]
-│   │   │   ├── Functional Specification
-│   │   │   ├── AS-IS Flow
-│   │   │   ├── TO-BE Flow
-│   │   │   └── Implementation Notes
+├── [{PREFIX}-FRONT] Frontend
+│   ├── [{PREFIX}-FRONT] Architecture and Stack
+│   │   ├── [{PREFIX}-FRONT] React Application Architecture
+│   │   ├── [{PREFIX}-FRONT] WordPress CMS Architecture
+│   │   ├── [{PREFIX}-FRONT] Technical Decisions (ADRs)
+│   │   └── [{PREFIX}-FRONT] Component Library Reference
+│   ├── [{PREFIX}-FRONT] Environment Configuration
+│   │   ├── [{PREFIX}-FRONT] Local Development Setup
+│   │   ├── [{PREFIX}-FRONT] DEV Environment Config
+│   │   ├── [{PREFIX}-FRONT] QA Environment Config
+│   │   ├── [{PREFIX}-FRONT] STG Environment Config
+│   │   └── [{PREFIX}-FRONT] PROD Environment Config
+│   ├── [{PREFIX}-FRONT] Functional Documentation
+│   │   ├── [{PREFIX}-FRONT] [Module/Feature Name]
+│   │   │   ├── [{PREFIX}-FRONT] Functional Specification
+│   │   │   ├── [{PREFIX}-FRONT] AS-IS Flow
+│   │   │   ├── [{PREFIX}-FRONT] TO-BE Flow
+│   │   │   └── [{PREFIX}-FRONT] Implementation Notes
 │   │   └── ... (repeat per module)
-│   ├── Technical Guides
-│   │   ├── Build and Deployment Process
-│   │   ├── Code Standards
-│   │   ├── Testing Strategy
-│   │   ├── Performance Guidelines
-│   │   ├── Accessibility Compliance
-│   │   └── Analytics Implementation
-│   ├── Runbooks
-│   │   ├── Incident Response — Frontend
-│   │   └── Common Troubleshooting
-│   └── Knowledge Base
-│       ├── Decision Log
-│       └── Lessons Learned
+│   ├── [{PREFIX}-FRONT] Technical Guides
+│   │   ├── [{PREFIX}-FRONT] Build and Deployment Process
+│   │   ├── [{PREFIX}-FRONT] Code Standards
+│   │   ├── [{PREFIX}-FRONT] Testing Strategy
+│   │   ├── [{PREFIX}-FRONT] Performance Guidelines
+│   │   ├── [{PREFIX}-FRONT] Accessibility Compliance
+│   │   └── [{PREFIX}-FRONT] Analytics Implementation
+│   ├── [{PREFIX}-FRONT] Runbooks
+│   │   ├── [{PREFIX}-FRONT] Incident Response — Frontend
+│   │   └── [{PREFIX}-FRONT] Common Troubleshooting
+│   └── [{PREFIX}-FRONT] Knowledge Base
+│       ├── [{PREFIX}-FRONT] Decision Log
+│       └── [{PREFIX}-FRONT] Lessons Learned
 │
-├── Backend & Services
-│   ├── Architecture and Stack
-│   │   ├── Microservices Overview
-│   │   ├── Lambda Functions Catalog
-│   │   ├── API Gateway Configuration
-│   │   └── Technical Decisions (ADRs)
-│   ├── API Documentation
-│   │   ├── [Service Name] API
-│   │   │   ├── API Specification (or link to Swagger/OpenAPI)
-│   │   │   ├── Request-Response Examples
-│   │   │   ├── Error Codes and Handling
-│   │   │   └── Rate Limits and SLAs
+├── [{PREFIX}-BACK] Backend & Services
+│   ├── [{PREFIX}-BACK] Architecture and Stack
+│   │   ├── [{PREFIX}-BACK] Microservices Overview
+│   │   ├── [{PREFIX}-BACK] Lambda Functions Catalog
+│   │   ├── [{PREFIX}-BACK] API Gateway Configuration
+│   │   └── [{PREFIX}-BACK] Technical Decisions (ADRs)
+│   ├── [{PREFIX}-BACK] API Documentation
+│   │   ├── [{PREFIX}-BACK] [Service Name] API
+│   │   │   ├── [{PREFIX}-BACK] API Specification (or link to Swagger/OpenAPI)
+│   │   │   ├── [{PREFIX}-BACK] Request-Response Examples
+│   │   │   ├── [{PREFIX}-BACK] Error Codes and Handling
+│   │   │   └── [{PREFIX}-BACK] Rate Limits and SLAs
 │   │   └── ... (repeat per service)
-│   ├── Service Catalog
-│   │   ├── [Service Name]
-│   │   │   ├── Service Overview
-│   │   │   ├── Data Model
-│   │   │   ├── Dependencies and Integrations
-│   │   │   ├── Environment Configuration
-│   │   │   └── Deployment Guide
+│   ├── [{PREFIX}-BACK] Service Catalog
+│   │   ├── [{PREFIX}-BACK] [Service Name]
+│   │   │   ├── [{PREFIX}-BACK] Service Overview
+│   │   │   ├── [{PREFIX}-BACK] Data Model
+│   │   │   ├── [{PREFIX}-BACK] Dependencies and Integrations
+│   │   │   ├── [{PREFIX}-BACK] Environment Configuration
+│   │   │   └── [{PREFIX}-BACK] Deployment Guide
 │   │   └── ... (repeat per service)
-│   ├── Forms Microservices
-│   │   ├── Forms Processing Architecture
-│   │   ├── [Form Name] Specification
-│   │   └── Validation Rules Reference
-│   ├── Functional Documentation
-│   │   ├── [Functional Area]
-│   │   │   ├── Functional Specification
-│   │   │   ├── AS-IS Flow
-│   │   │   └── TO-BE Flow
+│   ├── [{PREFIX}-BACK] Forms Microservices
+│   │   ├── [{PREFIX}-BACK] Forms Processing Architecture
+│   │   ├── [{PREFIX}-BACK] [Form Name] Specification
+│   │   └── [{PREFIX}-BACK] Validation Rules Reference
+│   ├── [{PREFIX}-BACK] Functional Documentation
+│   │   ├── [{PREFIX}-BACK] [Functional Area]
+│   │   │   ├── [{PREFIX}-BACK] Functional Specification
+│   │   │   ├── [{PREFIX}-BACK] AS-IS Flow
+│   │   │   └── [{PREFIX}-BACK] TO-BE Flow
 │   │   └── ...
-│   ├── Runbooks
-│   │   ├── Incident Response — Backend
-│   │   └── Common Troubleshooting
-│   └── Knowledge Base
-│       ├── Decision Log
-│       └── Lessons Learned
+│   ├── [{PREFIX}-BACK] Runbooks
+│   │   ├── [{PREFIX}-BACK] Incident Response — Backend
+│   │   └── [{PREFIX}-BACK] Common Troubleshooting
+│   └── [{PREFIX}-BACK] Knowledge Base
+│       ├── [{PREFIX}-BACK] Decision Log
+│       └── [{PREFIX}-BACK] Lessons Learned
 │
-├── UI/UX Design
-│   ├── Design System
-│   │   ├── Design Principles
-│   │   ├── Brand Guidelines Reference
-│   │   ├── Component Pattern Library
-│   │   │   ├── [Component Name] — Usage Guide
+├── [{PREFIX}-DESIGN] UI/UX Design
+│   ├── [{PREFIX}-DESIGN] Design System
+│   │   ├── [{PREFIX}-DESIGN] Design Principles
+│   │   ├── [{PREFIX}-DESIGN] Brand Guidelines Reference
+│   │   ├── [{PREFIX}-DESIGN] Component Pattern Library
+│   │   │   ├── [{PREFIX}-DESIGN] [Component Name] — Usage Guide
 │   │   │   └── ...
-│   │   └── Accessibility Standards
-│   ├── Design Deliverables Index
-│   │   ├── [Feature/Page Name]
-│   │   │   ├── Design Brief
-│   │   │   ├── Figma Links and Embeds
-│   │   │   ├── Interaction Specifications
-│   │   │   └── Design Review Notes
+│   │   └── [{PREFIX}-DESIGN] Accessibility Standards
+│   ├── [{PREFIX}-DESIGN] Design Deliverables Index
+│   │   ├── [{PREFIX}-DESIGN] [Feature/Page Name]
+│   │   │   ├── [{PREFIX}-DESIGN] Design Brief
+│   │   │   ├── [{PREFIX}-DESIGN] Figma Links and Embeds
+│   │   │   ├── [{PREFIX}-DESIGN] Interaction Specifications
+│   │   │   └── [{PREFIX}-DESIGN] Design Review Notes
 │   │   └── ...
-│   ├── User Research
-│   │   ├── Research Plan
-│   │   ├── Persona Definitions
-│   │   ├── Usability Test Results
-│   │   └── User Journey Maps
-│   └── Knowledge Base
-│       ├── Design Decision Log
-│       └── Lessons Learned
+│   ├── [{PREFIX}-DESIGN] User Research
+│   │   ├── [{PREFIX}-DESIGN] Research Plan
+│   │   ├── [{PREFIX}-DESIGN] Persona Definitions
+│   │   ├── [{PREFIX}-DESIGN] Usability Test Results
+│   │   └── [{PREFIX}-DESIGN] User Journey Maps
+│   └── [{PREFIX}-DESIGN] Knowledge Base
+│       ├── [{PREFIX}-DESIGN] Design Decision Log
+│       └── [{PREFIX}-DESIGN] Lessons Learned
 │
-├── Business & Product
-│   ├── Product Vision and Strategy
-│   │   ├── Product Roadmap (high level)
-│   │   ├── Business Objectives and KPIs
-│   │   └── Stakeholder Map
-│   ├── Business Definitions
-│   │   ├── Business Process Catalog
-│   │   ├── Business Rules Reference
-│   │   ├── Regulatory Requirements
-│   │   └── Data Dictionary (business terms)
-│   ├── Feature Documentation
-│   │   ├── [Epic/Feature Name]
-│   │   │   ├── Business Context and Requirements
-│   │   │   ├── User Story Map (link to issue tracker filter)
-│   │   │   ├── Acceptance Criteria Summary
-│   │   │   ├── AS-IS Business Process
-│   │   │   └── TO-BE Business Process
+├── [{PREFIX}-BIZ] Business & Product
+│   ├── [{PREFIX}-BIZ] Product Vision and Strategy
+│   │   ├── [{PREFIX}-BIZ] Product Roadmap (high level)
+│   │   ├── [{PREFIX}-BIZ] Business Objectives and KPIs
+│   │   └── [{PREFIX}-BIZ] Stakeholder Map
+│   ├── [{PREFIX}-BIZ] Business Definitions
+│   │   ├── [{PREFIX}-BIZ] Business Process Catalog
+│   │   ├── [{PREFIX}-BIZ] Business Rules Reference
+│   │   ├── [{PREFIX}-BIZ] Regulatory Requirements
+│   │   └── [{PREFIX}-BIZ] Data Dictionary (business terms)
+│   ├── [{PREFIX}-BIZ] Feature Documentation
+│   │   ├── [{PREFIX}-BIZ] [Epic/Feature Name]
+│   │   │   ├── [{PREFIX}-BIZ] Business Context and Requirements
+│   │   │   ├── [{PREFIX}-BIZ] User Story Map (link to issue tracker filter)
+│   │   │   ├── [{PREFIX}-BIZ] Acceptance Criteria Summary
+│   │   │   ├── [{PREFIX}-BIZ] AS-IS Business Process
+│   │   │   └── [{PREFIX}-BIZ] TO-BE Business Process
 │   │   └── ...
-│   ├── Analytics and Metrics
-│   │   ├── Analytics Implementation Guide (GTM, GA4)
-│   │   └── KPI Dashboard Links
-│   └── Knowledge Base
-│       ├── Business Decision Log
-│       └── Lessons Learned
+│   ├── [{PREFIX}-BIZ] Analytics and Metrics
+│   │   ├── [{PREFIX}-BIZ] Analytics Implementation Guide (GTM, GA4)
+│   │   └── [{PREFIX}-BIZ] KPI Dashboard Links
+│   └── [{PREFIX}-BIZ] Knowledge Base
+│       ├── [{PREFIX}-BIZ] Business Decision Log
+│       └── [{PREFIX}-BIZ] Lessons Learned
 │
-├── Architecture & Cloud
-│   ├── Architecture Overview
-│   │   ├── Solution Architecture Document (SAD)
-│   │   ├── High-Level Architecture Diagram
-│   │   ├── Architecture Decision Records (ADRs)
-│   │   │   └── ADR-NNNN — [Decision Title]
-│   │   └── Non-Functional Requirements
-│   ├── AWS Infrastructure
-│   │   ├── Account Structure and Organization
-│   │   ├── Network Architecture (VPC, subnets)
-│   │   ├── IAM Roles and Policies
-│   │   │   ├── [Role Name] — Definition and Justification
-│   │   │   └── Deployment Role Requests
-│   │   │       └── [YYYY-MM-DD] Role Request — [Description]
-│   │   ├── AWS Service Catalog
-│   │   │   ├── CloudFront Configuration
-│   │   │   ├── S3 Bucket Inventory
-│   │   │   ├── Lambda Deployment Configuration
-│   │   │   ├── API Gateway Setup
-│   │   │   ├── RDS/DynamoDB Configuration
+├── [{PREFIX}-ARCH] Architecture & Cloud
+│   ├── [{PREFIX}-ARCH] Architecture Overview
+│   │   ├── [{PREFIX}-ARCH] Solution Architecture Document (SAD)
+│   │   ├── [{PREFIX}-ARCH] High-Level Architecture Diagram
+│   │   ├── [{PREFIX}-ARCH] Architecture Decision Records (ADRs)
+│   │   │   └── [{PREFIX}-ARCH] ADR-NNNN — [Decision Title]
+│   │   └── [{PREFIX}-ARCH] Non-Functional Requirements
+│   ├── [{PREFIX}-ARCH] AWS Infrastructure
+│   │   ├── [{PREFIX}-ARCH] Account Structure and Organization
+│   │   ├── [{PREFIX}-ARCH] Network Architecture (VPC, subnets)
+│   │   ├── [{PREFIX}-ARCH] IAM Roles and Policies
+│   │   │   ├── [{PREFIX}-ARCH] [Role Name] — Definition and Justification
+│   │   │   └── [{PREFIX}-ARCH] Deployment Role Requests
+│   │   │       └── [{PREFIX}-ARCH] Role Request — [Description]
+│   │   ├── [{PREFIX}-ARCH] AWS Service Catalog
+│   │   │   ├── [{PREFIX}-ARCH] CloudFront Configuration
+│   │   │   ├── [{PREFIX}-ARCH] S3 Bucket Inventory
+│   │   │   ├── [{PREFIX}-ARCH] Lambda Deployment Configuration
+│   │   │   ├── [{PREFIX}-ARCH] API Gateway Setup
+│   │   │   ├── [{PREFIX}-ARCH] RDS/DynamoDB Configuration
 │   │   │   └── ... (per AWS service used)
-│   │   └── Cost Management and Tagging Strategy
-│   ├── Infrastructure Requests
-│   │   ├── Infrastructure Request Process
-│   │   ├── Request Registry
-│   │   │   └── [YYYY-MM-DD] Infra Request — [Description]
-│   │   └── Provisioned Resources Inventory
-│   ├── Cloud Deployments
-│   │   ├── CI/CD Pipeline Architecture
-│   │   ├── Deployment Request Log
-│   │   │   └── [YYYY-MM-DD] Deployment Request — [Description]
-│   │   ├── Infrastructure-as-Code Reference
-│   │   └── Environment Provisioning Guides
-│   ├── Monitoring and Observability
-│   │   ├── Monitoring Strategy
-│   │   ├── Alert Configuration
-│   │   ├── Logging Architecture
-│   │   └── Dashboard Links
-│   └── Knowledge Base
-│       ├── Architecture Decision Log
-│       └── Lessons Learned
+│   │   └── [{PREFIX}-ARCH] Cost Management and Tagging Strategy
+│   ├── [{PREFIX}-ARCH] Infrastructure Requests
+│   │   ├── [{PREFIX}-ARCH] Infrastructure Request Process
+│   │   ├── [{PREFIX}-ARCH] Request Registry
+│   │   │   └── [{PREFIX}-ARCH] Infra Request — [Description]
+│   │   └── [{PREFIX}-ARCH] Provisioned Resources Inventory
+│   ├── [{PREFIX}-ARCH] Cloud Deployments
+│   │   ├── [{PREFIX}-ARCH] CI/CD Pipeline Architecture
+│   │   ├── [{PREFIX}-ARCH] Deployment Request Log
+│   │   │   └── [{PREFIX}-ARCH] Deployment Request — [Description]
+│   │   ├── [{PREFIX}-ARCH] Infrastructure-as-Code Reference
+│   │   └── [{PREFIX}-ARCH] Environment Provisioning Guides
+│   ├── [{PREFIX}-ARCH] Monitoring and Observability
+│   │   ├── [{PREFIX}-ARCH] Monitoring Strategy
+│   │   ├── [{PREFIX}-ARCH] Alert Configuration
+│   │   ├── [{PREFIX}-ARCH] Logging Architecture
+│   │   └── [{PREFIX}-ARCH] Dashboard Links
+│   └── [{PREFIX}-ARCH] Knowledge Base
+│       ├── [{PREFIX}-ARCH] Architecture Decision Log
+│       └── [{PREFIX}-ARCH] Lessons Learned
 │
-├── Security & Compliance
+├── [{PREFIX}-SEC] Security & Compliance
 │   │
 │   │   > **Page Restrictions**: Apply read restriction on this root page.
 │   │   > Confluence Cloud inherits restrictions to child pages.
 │   │   > Access: security team + architects + tech leads.
 │   │
-│   ├── Security SDLC
-│   │   ├── Secure Development Lifecycle Policy
-│   │   ├── Security Requirements Checklist
-│   │   ├── Code Review Checklist (Security)
-│   │   └── Dependency Vulnerability Policy
-│   ├── Cybersecurity Documentation
-│   │   ├── Threat Model
-│   │   ├── Security Architecture
-│   │   ├── Penetration Test Reports
-│   │   │   └── [YYYY-QN] Pen Test — [Scope]
-│   │   ├── Vulnerability Assessment Log
-│   │   └── Security Incident Reports
-│   ├── Compliance and Audit
-│   │   ├── Regulatory Compliance Matrix
-│   │   ├── Audit Trail Documentation
-│   │   ├── Data Privacy (GDPR / Local Regulation)
-│   │   └── Audit Reports Archive
-│   ├── Access Management
-│   │   ├── Role-Based Access Control (RBAC) Matrix
-│   │   ├── Service Account Inventory
-│   │   └── Access Review Calendar
-│   └── Certificates and Renewals
-│       ├── SSL/TLS Certificate Inventory
-│       └── Renewal Calendar
+│   ├── [{PREFIX}-SEC] Security SDLC
+│   │   ├── [{PREFIX}-SEC] Secure Development Lifecycle Policy
+│   │   ├── [{PREFIX}-SEC] Security Requirements Checklist
+│   │   ├── [{PREFIX}-SEC] Code Review Checklist (Security)
+│   │   └── [{PREFIX}-SEC] Dependency Vulnerability Policy
+│   ├── [{PREFIX}-SEC] Cybersecurity Documentation
+│   │   ├── [{PREFIX}-SEC] Threat Model
+│   │   ├── [{PREFIX}-SEC] Security Architecture
+│   │   ├── [{PREFIX}-SEC] Penetration Test Reports
+│   │   │   └── [{PREFIX}-SEC] Pen Test — [Scope]
+│   │   ├── [{PREFIX}-SEC] Vulnerability Assessment Log
+│   │   └── [{PREFIX}-SEC] Security Incident Reports
+│   ├── [{PREFIX}-SEC] Compliance and Audit
+│   │   ├── [{PREFIX}-SEC] Regulatory Compliance Matrix
+│   │   ├── [{PREFIX}-SEC] Audit Trail Documentation
+│   │   ├── [{PREFIX}-SEC] Data Privacy (GDPR / Local Regulation)
+│   │   └── [{PREFIX}-SEC] Audit Reports Archive
+│   ├── [{PREFIX}-SEC] Access Management
+│   │   ├── [{PREFIX}-SEC] Role-Based Access Control (RBAC) Matrix
+│   │   ├── [{PREFIX}-SEC] Service Account Inventory
+│   │   └── [{PREFIX}-SEC] Access Review Calendar
+│   └── [{PREFIX}-SEC] Certificates and Renewals
+│       ├── [{PREFIX}-SEC] SSL/TLS Certificate Inventory
+│       └── [{PREFIX}-SEC] Renewal Calendar
 │
-└── QA & Testing
-    ├── QA Strategy
-    │   ├── Overall Testing Strategy
-    │   ├── Test Types and Tools
-    │   ├── Automation Strategy
-    │   └── Quality Criteria and Metrics
-    ├── Test Plans
-    │   ├── [Feature/Sprint] — Test Plan
+└── [{PREFIX}-QA] QA & Testing
+    ├── [{PREFIX}-QA] QA Strategy
+    │   ├── [{PREFIX}-QA] Overall Testing Strategy
+    │   ├── [{PREFIX}-QA] Test Types and Tools
+    │   ├── [{PREFIX}-QA] Automation Strategy
+    │   └── [{PREFIX}-QA] Quality Criteria and Metrics
+    ├── [{PREFIX}-QA] Test Plans
+    │   ├── [{PREFIX}-QA] [Feature/Sprint] — Test Plan
     │   └── ... (repeat per test cycle)
-    ├── QA Environments
-    │   ├── QA Environment Configuration
-    │   ├── Test Data and Management
-    │   └── Compatibility Matrix (browsers, devices)
-    ├── Reports and Metrics
-    │   ├── Defect Dashboard (link to issue tracker dashboard)
-    │   ├── Test Coverage Reports
-    │   └── Quality Retrospectives
-    ├── Test Automation
-    │   ├── Framework and Tools (Selenium/Cypress/Playwright)
-    │   ├── Framework Setup Guide
-    │   ├── Automation Coverage (metrics)
-    │   └── Automation Technical Decisions (ADRs)
-    ├── Guides and Processes
-    │   ├── How to Report a Defect (guide for devs)
-    │   ├── Regression Process
-    │   ├── Pre-Deploy Test Checklist
-    │   └── Accessibility Testing Guide
-    └── Knowledge Base
-        ├── QA Decision Log
-        └── Lessons Learned
+    ├── [{PREFIX}-QA] QA Environments
+    │   ├── [{PREFIX}-QA] QA Environment Configuration
+    │   ├── [{PREFIX}-QA] Test Data and Management
+    │   └── [{PREFIX}-QA] Compatibility Matrix (browsers, devices)
+    ├── [{PREFIX}-QA] Reports and Metrics
+    │   ├── [{PREFIX}-QA] Defect Dashboard (link to issue tracker dashboard)
+    │   ├── [{PREFIX}-QA] Test Coverage Reports
+    │   └── [{PREFIX}-QA] Quality Retrospectives
+    ├── [{PREFIX}-QA] Test Automation
+    │   ├── [{PREFIX}-QA] Framework and Tools (Selenium/Cypress/Playwright)
+    │   ├── [{PREFIX}-QA] Framework Setup Guide
+    │   ├── [{PREFIX}-QA] Automation Coverage (metrics)
+    │   └── [{PREFIX}-QA] Automation Technical Decisions (ADRs)
+    ├── [{PREFIX}-QA] Guides and Processes
+    │   ├── [{PREFIX}-QA] How to Report a Defect (guide for devs)
+    │   ├── [{PREFIX}-QA] Regression Process
+    │   ├── [{PREFIX}-QA] Pre-Deploy Test Checklist
+    │   └── [{PREFIX}-QA] Accessibility Testing Guide
+    └── [{PREFIX}-QA] Knowledge Base
+        ├── [{PREFIX}-QA] QA Decision Log
+        └── [{PREFIX}-QA] Lessons Learned
 ```
 
 ---
