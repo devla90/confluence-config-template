@@ -53,7 +53,7 @@ stay in the framework repo, so an update there reaches every project.
 /doc-confluence <type> <subject> [source-path-or-url]
 ```
 
-Types: `func-spec` · `architecture` · `adr` · `api-spec` · `env-config` · `runbook` · `guide` · `security-doc` ·
+Types: `func-spec` · `architecture` · `adr` · `api-spec` · `env-config` · `runbook` · `guide` · `reference` · `security-doc` ·
 `migration` · `release-note` · `deployment-request` · `test-plan` · `test-strategy` · `infra-request` · `role-request`
 
 Results are filed under `output/{source}/` — one folder per repo documented, `generic/`
