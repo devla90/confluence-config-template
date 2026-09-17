@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Generated documents are working artifacts, not source.
+# Commit them only if your team has decided to review docs in git.
+output/*
+!output/README.md
