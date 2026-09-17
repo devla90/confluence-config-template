@@ -102,7 +102,6 @@ Home ({SPACEKEY} — Welcome page with links to all sections)
 │   │   ├── [{PREFIX}-FRONT] Incident Response — Frontend
 │   │   └── [{PREFIX}-FRONT] Common Troubleshooting
 │   └── [{PREFIX}-FRONT] Knowledge Base
-│       ├── [{PREFIX}-FRONT] Decision Log
 │       └── [{PREFIX}-FRONT] Lessons Learned
 │
 ├── [{PREFIX}-BACK] Backend & Services
@@ -140,7 +139,6 @@ Home ({SPACEKEY} — Welcome page with links to all sections)
 │   │   ├── [{PREFIX}-BACK] Incident Response — Backend
 │   │   └── [{PREFIX}-BACK] Common Troubleshooting
 │   └── [{PREFIX}-BACK] Knowledge Base
-│       ├── [{PREFIX}-BACK] Decision Log
 │       └── [{PREFIX}-BACK] Lessons Learned
 │
 ├── [{PREFIX}-DESIGN] UI/UX Design
@@ -164,7 +162,7 @@ Home ({SPACEKEY} — Welcome page with links to all sections)
 │   │   ├── [{PREFIX}-DESIGN] Usability Test Results
 │   │   └── [{PREFIX}-DESIGN] User Journey Maps
 │   └── [{PREFIX}-DESIGN] Knowledge Base
-│       ├── [{PREFIX}-DESIGN] Design Decision Log
+│       ├── [{PREFIX}-DESIGN] Design Decisions (ADRs)
 │       └── [{PREFIX}-DESIGN] Lessons Learned
 │
 ├── [{PREFIX}-BIZ] Business & Product
@@ -189,7 +187,7 @@ Home ({SPACEKEY} — Welcome page with links to all sections)
 │   │   ├── [{PREFIX}-BIZ] Analytics Implementation Guide (GTM, GA4)
 │   │   └── [{PREFIX}-BIZ] KPI Dashboard Links
 │   └── [{PREFIX}-BIZ] Knowledge Base
-│       ├── [{PREFIX}-BIZ] Business Decision Log
+│       ├── [{PREFIX}-BIZ] Business Decisions (ADRs)
 │       └── [{PREFIX}-BIZ] Lessons Learned
 │
 ├── [{PREFIX}-ARCH] Architecture & Cloud
@@ -231,7 +229,6 @@ Home ({SPACEKEY} — Welcome page with links to all sections)
 │   │   ├── [{PREFIX}-ARCH] Logging Architecture
 │   │   └── [{PREFIX}-ARCH] Dashboard Links
 │   └── [{PREFIX}-ARCH] Knowledge Base
-│       ├── [{PREFIX}-ARCH] Architecture Decision Log
 │       └── [{PREFIX}-ARCH] Lessons Learned
 │
 ├── [{PREFIX}-SEC] Security & Compliance
@@ -293,7 +290,7 @@ Home ({SPACEKEY} — Welcome page with links to all sections)
     │   ├── [{PREFIX}-QA] Pre-Deploy Test Checklist
     │   └── [{PREFIX}-QA] Accessibility Testing Guide
     └── [{PREFIX}-QA] Knowledge Base
-        ├── [{PREFIX}-QA] QA Decision Log
+        ├── [{PREFIX}-QA] QA Decisions (ADRs)
         └── [{PREFIX}-QA] Lessons Learned
 ```
 
